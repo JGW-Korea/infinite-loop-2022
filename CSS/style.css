@@ -5,6 +5,9 @@
 /* Components */
 @import "components/navbar.css";
 
+/* Screens */
+@import "screens/main-header.css";
+
 :root {
   font-family: "Josefin Sans", sans-serif;
 }
