@@ -1,0 +1,75 @@
+.section {
+  padding: 50px 80px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .section-title {
+  margin: 0px 0px 80px;
+  padding: 0px 225px;
+  box-sizing: border-box;
+}
+
+.section-title__main-contant h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #3862c4;
+}
+.section-title__main-contant span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+.section-title__main-contant a {
+  text-decoration: none;
+  color: #88b0d8;
+}
+
+.section-title__main-contant a:hover {
+  text-decoration: none;
+  color: #f20246;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-light {
+  background-color: #efefef;
+}
+
+.section-title__sub {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 225px;
+  margin-bottom: 100px;
+}
+
+.section-title__sub-contant {
+  box-sizing: border-box;
+}
+
+.section-title__sub-contant-icons {
+  display: flex;
+}
+
+.section-title__sub-contant-icons i {
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.section-title__sub-contant-icons i,
+.section-title__sub-contant-icons h2 {
+  font-size: 50px;
+  color: #3862c4;
+}
+
+.section-title__sub-contant-text span {
+  font-size: 20px;
+  display: flex;
+  padding-right: 20px;
+  font-weight: 400;
+  color: #7a7a7a;
+}

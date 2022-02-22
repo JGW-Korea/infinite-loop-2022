@@ -23,14 +23,41 @@
   transition: all 0.5s linear;
 }
 
-.navbar__tag span {
+.navbar__tag a {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
   font-weight: 200;
+  text-decoration: none;
+  color: white;
 }
 
-.navbar__tag span:hover {
+.navbar__tag a:hover {
   background-color: #38b;
   transition: all 0.2s linear;
+}
+
+.sticky {
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.8s linear;
+}
+
+.sticky .navbar__link a,
+.sticky .navbar__tag a {
+  color: #38b;
+}
+
+@keyframes linkColorScroll {
+  to {
+    color: #83c4ea;
+  }
+}
+
+.sticky .navbar__link a:hover {
+  animation: linkColorScroll 0.8s forwards;
+}
+
+.sticky .navbar__tag a:hover {
+  color: white;
 }
