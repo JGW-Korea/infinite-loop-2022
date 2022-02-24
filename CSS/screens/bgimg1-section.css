@@ -1,5 +1,5 @@
 .section {
-  padding: 50px 80px;
+  padding: 50px 200px;
   color: black;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,6 @@
 
 .section .section-title {
   margin: 0px 0px 80px;
-  padding: 0px 225px;
   box-sizing: border-box;
 }
 
@@ -38,12 +37,9 @@
 }
 
 .section-title__sub {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  padding: 0px 225px;
   margin-bottom: 100px;
 }
 
@@ -72,4 +68,35 @@
   padding-right: 20px;
   font-weight: 400;
   color: #7a7a7a;
+}
+
+@media screen and (max-width: 625px) {
+  .section {
+    padding: 50px 30px;
+  }
+
+  .section-title,
+  .section-title__sub {
+    margin: 0px 0px 0px;
+  }
+
+  .section-title__sub-contant {
+    margin-bottom: 80px;
+  }
+
+  .section-title__sub {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-title__main-contant h2,
+  .section-title__sub-contant-icons i,
+  .section-title__sub-contant-icons h2 {
+    font-size: 25px;
+  }
+
+  .section-title__main-contant span,
+  .section-title__sub-contant-text span {
+    font-size: 15px;
+  }
 }

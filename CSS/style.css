@@ -5,9 +5,12 @@
 /* Components */
 @import "components/navbar.css";
 @import "components/main-header.css";
+@import "components/sub-header.css";
 
 /* Screens */
 @import "screens/bgimg1-section.css";
+@import "screens/section-gallery.css";
+
 
 /* body,
 html {
