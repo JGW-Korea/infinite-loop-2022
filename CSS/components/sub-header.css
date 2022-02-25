@@ -54,3 +54,27 @@
   line-height: 17px;
   text-align: center;
 }
+
+@media screen and (max-width: 625px) {
+  .bgimg-text__sub,
+  .bgimg-text__sub-profile {
+    padding: 50px 30px;
+  }
+  .bgimg-text__sub .bgimg-text__sub-title {
+    font-size: 25px;
+  }
+  .bgimg-text__sub .bgimg-text__sub-span {
+    font-size: 12px;
+  }
+  .bgimg-text__sub-profile-columm img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .bgimg-text__sub-profile-columm span {
+    font-size: 12px;
+    text-align: center;
+  }
+}

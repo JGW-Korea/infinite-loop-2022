@@ -5,6 +5,7 @@
   padding: 8px 10%;
   box-sizing: border-box;
   justify-content: space-between;
+  align-items: center;
   font-size: 22px;
   color: white;
   background-color: transparent;
@@ -60,4 +61,105 @@
 
 .sticky .navbar__tag a:hover {
   color: white;
+}
+
+.navbar-btn {
+  display: none;
+}
+
+@media screen and (max-width: 625px) {
+  .navbar {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    flex-direction: column;
+  }
+  .navbar.bgColor {
+    background-color: white;
+  }
+  .navbar.bgColor .navbar__link a,
+  .navbar.bgColor .navbar__tag a {
+    color: #38b;
+  }
+
+  .navbar.bgColor .navbar__tag a:hover {
+    color: white;
+  }
+
+  .navbar__link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar__link a {
+    color: white;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .navbar-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .navbar-btn__burger {
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background-color: #bdc8fc;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar-btn__burger::before,
+  .navbar-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background-color: #bdc8fc;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar-btn__burger::before {
+    transform: translateY(-13px);
+  }
+  .navbar-btn__burger::after {
+    transform: translateY(13px);
+  }
+
+  .navbar-btn.open .navbar-btn__burger {
+    background-color: transparent;
+  }
+  .navbar-btn.open .navbar-btn__burger::before {
+    transform: rotate(45deg);
+  }
+  .navbar-btn.open .navbar-btn__burger::after {
+    transform: rotate(-45deg);
+  }
+
+  .navbar__tag {
+    display: none;
+  }
+  .navbar__tag.tag_open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar__tag.tag_open a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
 }

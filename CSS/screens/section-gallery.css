@@ -93,3 +93,20 @@
   display: block;
   animation: textPosistion 0.5s ease-in-out forwards;
 }
+
+@media screen and (max-width: 625px) {
+  .section-gallery {
+    padding: 50px 30px;
+  }
+
+  .section-gallery__contents {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .section-gallery__contents-column .section-gallery__contents-column-img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+  }
+}
