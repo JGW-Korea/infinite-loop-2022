@@ -162,4 +162,9 @@
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
+  .navbar__tag.tag_open a:last-child {
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+  }
 }
